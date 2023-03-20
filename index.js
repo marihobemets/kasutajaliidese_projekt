@@ -2,7 +2,7 @@ const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home-intro");
 
 const sectionOneOptions = {
-    rootMargin: "-20px 0px 0px 0px"
+    rootMargin: "-200px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
@@ -22,8 +22,7 @@ sectionOneObserver.observe(sectionOne);
 
 
 
-
-
+console.log('Hello world')
 
 
 $('#myDropdown').on('show.bs.dropdown', function () {
