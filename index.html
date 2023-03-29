@@ -21,12 +21,12 @@
         <div class="desktop-header">
           <a class="blue-background">
             <img src="/images/main-bg.png" class="img-fluid" alt="Responsive image" id="img1">
-            <h1 class="img-fluid offset-2" id="anett-text">Anett</h1>
+            <h1 class="img-fluid offset-2" id="anett-text">Anett<hr class="hr"></h1>
             <!--<div class="divider py-1 bg-dark non-diagonal"></div>-->
             <img src="/images/anett-kontaveit-main.png" id="img2" class="img-fluid offset-5">
           </a>
         </div>
-        <nav class="navbar fixed-top navbar-expand-lg text nav-scrolled">
+        <nav class="navbar fixed-top navbar-expand-lg text">
           <a class="navbar-logo col-sm-1 col-md-1 col-lg-1" href="#">
             <img class="navbar-logo">
           </a>
@@ -37,7 +37,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto nav-list"></ul>
               <div class="nav-list-item offset-5">
-                <a class="nav-link nav-link-scrolled" href="#">Anettist</a>
+                <a class="nav-link" href="#">Anettist</a>
               </div>
               <div class="nav-list-item">
                 <a class="nav-link" href="#">Anetti lood</a>
@@ -74,22 +74,20 @@
           </div>
         </nav>
     
-        <div class="sponsors-diagonal">
           <div class="sponsors diagonal">
             <div class="non-diagonal">
               <h7>SPONSORID</h7>
-              <div class="row img-fluid">
-                <div class="col-sm-1 col-md-1 col-lg-1 offset-2"><img src="/images/sponsorid-lacoste.png" class="sponsors-img"></div>
-                <div class="col-sm-1 col-md-1 col-lg-1"><img src="/images/sponsorid-tallink.png" class="sponsors-img"></div>
-                <div class="col-sm-1 col-md-1 col-lg-1"><img src="/images/sponsorid-telegraaf.png" class="sponsors-img"></div>
-                <div class="col-sm-1 col-md-1 col-lg-1"><img src="/images/sponsorid-porsche.png" class="sponsors-img"></div>
-                <div class="col-sm-1 col-md-1 col-lg-1"><img src="/images/sponsors-zenith.png" class="sponsors-img"></div>
-                <div class="col-sm-1 col-md-1 col-lg-1"><img src="/images/sponsorid-babolat.png" class="sponsors-img"></div>
-                <div class="col-sm-1 col-md-1 col-lg-1"><img src="/images/sponsorid-alexela.png"class="sponsors-img"></div>
-                </div>
+            </div>
+            <div class="img-fluid non-diagonal">
+                  <img src="/images/sponsorid-lacoste.png" class="sponsors-img">
+                  <img src="/images/sponsorid-tallink.png" class="sponsors-img">
+                  <img src="/images/sponsorid-telegraaf.png" class="sponsors-img">
+                  <img src="/images/sponsorid-porsche.png" class="sponsors-img">
+                  <img src="/images/sponsors-zenith.png" class="sponsors-img">
+                  <img src="/images/sponsorid-babolat.png" class="sponsors-img">
+                  <img src="/images/sponsorid-alexela.png" class="sponsors-img">
             </div>
           </div>
-        </div>
     </header>
     <main>
       <div class="content">
@@ -143,7 +141,10 @@
     $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 80) {
+        if(scroll < 80){
+          $("nav").addClass("navbar-logo");
+        }
+        if (scroll >= 80) {
           $("nav").addClass("nav-scrolled");
           $("nav").addClass("navbar-logo-scrolled");
           $("nav").addClass("nav-link-scrolled");
