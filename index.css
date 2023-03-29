@@ -22,19 +22,20 @@ header {
 
 }
 nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 70px;
 }
 
 .nav-scrolled {
     background: white;
-    color: black;
+    text-decoration: none;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     height: 70px;
 }
 
 .navbar-logo {
+    z-index: 10;
     background-image: url(/images/anett-logo-white.svg);
     background-repeat: no-repeat;
 }
@@ -58,6 +59,7 @@ nav {
     
 }
 
+
 .nav-link:after {
     content: "";
     position: absolute;
@@ -79,12 +81,9 @@ nav {
 }
 
 .nav-link-scrolled {
-    --text: black;
-    --text-inverse: #f4f4f4;
+    color: black;
 }
-
-
-  
+ 
 .nav-span {
     font-weight: 600;
     letter-spacing: .085em;
@@ -92,7 +91,7 @@ nav {
 
 
 .nav-link-btn {
-    border: 0.9px solid currentColor;
+    border: 0.9px solid white;
     border-radius: 2em;
     margin-left: 0em;
     background-color: 250ms ease-in-out;
@@ -101,7 +100,7 @@ nav {
     font-weight: 100;
     
 }
-  
+
 .nav-link-btn:hover {
     --text: #f4f4f4;
     --text-inverse: #333;
@@ -110,7 +109,7 @@ nav {
     color: var(--text-inverse);
     border-color: var(--text);
 }
-  
+
 .nav-link-btn:after {
     display: none;
 }
@@ -120,6 +119,7 @@ nav {
 
 }
 .non-diagonal {
+    margin-top: 3%;
     transform: rotate(3deg);
 }
 
@@ -151,6 +151,7 @@ nav {
 
 #anett-text {
     font-family: 'Stainy Personal Use Only', sans-serif;
+    width: 500px;
     position: absolute;
     top: 200px;
     color: white;
@@ -164,8 +165,8 @@ nav {
 
 .sponsors {
     position: absolute;
-    height: 200px;
-    width: 102%;
+    height: 250px;
+    width: 101%;
     left: -6px;
     top: 650px;
     color: black;
@@ -173,18 +174,26 @@ nav {
     align-items: center;
     text-align: center;
     padding: auto;
-    font-size: 15px;
 }
 
 .sponsors-img {
-    height: 180px;
-    width: 200px;
-    padding: 50%;
-    margin-left: 40px;
+    height: 120px;
+    width: auto;
+    z-index: 10;
+    margin: 1%;
+    margin-top: -2%;
 }
 
+.content {
+    margin-top: 400px;
+}
 
-
+.hr {
+    width: 200px;
+    height: 50px;
+    color: white;
+    z-index: 100;
+}
 
 @font-face {
     font-family: 'Poppins';
