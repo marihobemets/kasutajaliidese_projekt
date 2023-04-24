@@ -357,9 +357,25 @@ h2 {
 }
 
 .footer-pic {
-    position: absolute;
+    position: relative;
     height: 900px;
     z-index: -10;
+}
+
+.footer-information {
+    z-index: 100;
+    text-align: center;
+    margin-top: -54%;
+    font-size: 50px;
+    color: #fff;
+}
+
+.footer-information-p {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 1%;
+    text-decoration: underline;
 }
 
 .contact {
@@ -385,10 +401,95 @@ h2 {
     padding-bottom: 1%;
 }
 
-.contact-pic a {
-    padding-top: 23px;
-    background-color: #000;
+
+.float-container {
+    margin-left: 7%;
+    padding: 10px;
+    margin-bottom: 20%;
 }
+
+.float-child {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    
+} 
+
+.float-pic{
+    width: 360px;
+    height: 220px;
+}
+
+.float-pic-footer{
+    width: 360px;
+    height: auto;
+}
+
+.frontpage-content h3 {
+    font-size: 25px;
+    font-family: "Poppins";
+    letter-spacing: 2px;
+    font-weight: medium;
+    padding: 20px;
+}
+
+.float-child p {
+    padding-left: 20px;
+}
+
+.btn-large, .page .btn-rounded {
+    color: #272d30;
+    font-size: 13px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 200;
+    padding:0px 40px 0px 0px;
+    background-image: url(/images/icons8-right-24-black.png)!important;
+    background-size: 15px;
+    background-position: 90% center!important;
+    background-repeat: no-repeat!important;
+    text-decoration: none!important;
+    transition-duration: 0.5s;
+}
+
+.btn-large:hover {
+    color: #004ac0;
+    padding: 0px 50px 0px 0px;
+    background-image: url(/images/icons8-right-24-blue.png)!important;
+    background-size: 15px;
+    transition-duration: 0.5s;
+}
+
+.btn-wrapper-footer{
+    height: 50px;
+    margin-top: 80px;
+}
+
+.btn-rounded-large-footer, .page .btn-rounded-footer {
+    color: #fff;
+    font-size: 13px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 200;
+    padding: 15px 30px 15px 30px;
+    border: solid 1px white;
+    border-radius: 36px;
+    background-position: 90% center!important;
+    background-repeat: no-repeat!important;
+    text-decoration: none!important;
+    transition-duration: 0.5s;
+}
+
+.btn-rounded-large-footer:hover {
+    color: #272d30;
+    background-color: #004ac0;
+    padding: 15px 40px 15px 30px;
+    background-image: url(/images/icons8-right-24.png)!important;
+    background-size: 15px;
+    transition-duration: 0.5s;
+}
+
+
+
+
 
 
 
